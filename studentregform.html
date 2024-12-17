@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: antiquewhite;
+
+    }
+
+    #srf {
+        padding: 80px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: grey;
+        height: 20rem;
+    }
+
+    .h2 {
+        border: 2px solid black;
+        background-color: white;
+        margin-top: 5px;
+    }
+    .mt-10{
+        margin-top: 10px;
+    }
+</style>
+
+<body>
+    <div id="srf">
+        <h2 class="h2">Student Registration Form</h2>
+        <form action="#">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td><input class="mt-10"  type="text" name="Name" id="Myname" placeholder="Name"></td>
+                </tr>
+                <td>Father Name</td>
+                <td><input class="mt-10" type="text" name="Fathername" id="Myname" placeholder="FatherName"></td>
+                </tr>
+                <td>Mother Name</td>
+                <td><input class="mt-10" type="text" name="Mothername" id="Myname" placeholder="MotherName"></td>
+                </tr>
+                <td>Date of birth</td>
+                <td><input class="mt-10" type="date" name="date" id="date"></td>
+                </tr>
+                <td>Email id</td>
+                <td><input class="mt-10" type="email" name="email" id="email" placeholder="email"></td>
+                </tr>
+                <td>Password</td>
+                <td><input class="mt-10" type="number" name="number" id="number" placeholder="Password"></td>
+                </tr>
+                <td>Mobile number</td>
+                <td><input class="mt-10" type="number" name="number" id="number" placeholder="Mobile number"></td>
+                </tr>
+                <td>Gender</td>
+                <td>Male<input class="mt-10" type="radio" name="mygender" id="mygender"> Female <input type="radio" name="mygender"
+                        id="mygender"> Other <input type="radio" name="mygender" id="mygender"></td>
+
+                </tr>
+
+            </tbody>
+        </table>
+        <div>
+            <input class="mt-10" type="submit" value="Submit Now">
+            <input class="mt-10" type="reset" value="Reset" >
+        </div>
+    </form>
+    </div>
+
+</body>
+
+</html>
