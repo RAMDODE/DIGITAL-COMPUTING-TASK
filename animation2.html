@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .main{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            animation: anim 1s infinite alternate;
+            border-radius: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .op{background-color:white;
+            width: 150px ;
+            height: 150px;
+
+        }
+        @keyframes anim {
+            from{
+                transform: scale(1);
+            }
+            to{
+                transform: scale(1.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="box op">
+
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
