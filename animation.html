@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        
+        
+        .box{
+            width:250px ;
+            height: 250px;
+            padding: 10px;
+            background-color: blueviolet;
+            animation: anim2  ease-in 5s infinite alternate;
+        }
+        @keyframes anim {
+
+            from{
+                width: 250px;
+                background-color: blueviolet;
+
+            }
+            to{
+                width: 700px;
+                background-color: aqua;
+            }
+        }
+        @keyframes anim2 {
+            0%{
+                transform: translateX(0);
+
+            }
+            25%{
+                transform: translateX(1200px);
+            }
+            50%{
+                transform: translatex(1200px) translateY( 600px);
+
+            }
+            75%{
+                transform: translateX(0px) translateY(600px);
+            }
+            100%{
+                transform: translateX(0) translateY(0);
+            }
+
+        }
+
+
+    </style>
+
+</head>
+<body><div class="box">
+    <h1>Animation</h1>
+    </div>
+</body>
+</html>
