@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function ram()
+        {
+        var x;
+        x=document.getElementById("inp").value
+
+        if(x%2==0)
+        {
+    
+        document.getElementById("i").innerHTML="even number";
+        document.getElementById("i").style.color="red";
+        }
+        else
+        {
+        document.getElementById( "i").innerHTML="odd number";
+    document.getElementById("i").style.color="blue";
+
+        }
+        ram();
+    }
+
+
+    </script>
+</head>
+<body>
+    <input type="textbox" id="inp">
+        <button onclick="ram()">cal</button>
+        <p id="i" ></p>
+        <p id="i"></p>
+    
+</body>
+</html>
